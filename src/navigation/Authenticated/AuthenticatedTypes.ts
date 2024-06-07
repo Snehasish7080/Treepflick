@@ -2,6 +2,7 @@ import {NativeStackScreenProps} from '@react-navigation/native-stack';
 
 export type AuthenticatedRouteList = {
   LoginView: undefined;
+  SignupView: undefined;
 };
 
 export type AuthenticatedNavigationProp<

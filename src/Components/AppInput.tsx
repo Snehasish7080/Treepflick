@@ -39,10 +39,12 @@ const styles = ScaledSheet.create({
     borderWidth: 1,
     borderColor: Colors.grey.inputBorder,
     borderRadius: 10,
+    paddingHorizontal: 20,
   },
   label: {
     fontSize: getFontSize(16),
     color: Colors.grey.label,
+    marginBottom: 4,
   },
   container: {
     width: '100%',

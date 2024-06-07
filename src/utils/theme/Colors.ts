@@ -7,6 +7,7 @@ export const Colors = {
     label: '#9796A1',
     inputBorder: '#EEEEEE',
     highlightIcon: '#30384F',
+    privacyText: '#5B5B5E',
   },
   white: {
     main: '#FFFFFF',

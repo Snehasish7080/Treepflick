@@ -1,7 +1,7 @@
 import React from 'react';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import {ParentRouteList} from './ParentTypes';
-import LoginView from '../../core/Authentication/Views/LoginView';
+import Authenticated from '../Authenticated/Authenticated';
 
 const Stack = createNativeStackNavigator<ParentRouteList>();
 
@@ -10,7 +10,7 @@ const ParentNavigation = () => {
     <Stack.Navigator initialRouteName={'Authenticated'}>
       <Stack.Screen
         name="Authenticated"
-        component={LoginView}
+        component={Authenticated}
         options={{
           headerShown: false,
         }}
