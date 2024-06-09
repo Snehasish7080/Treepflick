@@ -4,6 +4,7 @@ import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import {AuthenticatedRouteList} from './AuthenticatedTypes';
 import LoginView from '../../core/Authentication/Views/LoginView';
 import SignupView from '../../core/Authentication/Views/SignupView';
+import VerificationView from '../../core/Authentication/Views/VerificationView';
 
 const Stack = createNativeStackNavigator<AuthenticatedRouteList>();
 
@@ -20,6 +21,13 @@ const Authenticated = () => {
       <Stack.Screen
         name="SignupView"
         component={SignupView}
+        options={{
+          headerShown: false,
+        }}
+      />
+      <Stack.Screen
+        name="VerificationView"
+        component={VerificationView}
         options={{
           headerShown: false,
         }}

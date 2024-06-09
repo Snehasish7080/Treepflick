@@ -36,7 +36,9 @@ const SignupView: FC<AuthenticatedNavProps<'SignupView'>> = ({navigation}) => {
             placeholder="Enter password"
           />
         </View>
-        <Pressable style={styles.loginBtn}>
+        <Pressable
+          style={styles.loginBtn}
+          onPress={() => navigation.navigate('VerificationView')}>
           <AppText style={styles.loginText}>Continue</AppText>
         </Pressable>
         <AppText style={styles.privacyInfo}>

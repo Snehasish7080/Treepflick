@@ -30,7 +30,9 @@ const LoginView: FC<AuthenticatedNavProps<'LoginView'>> = ({navigation}) => {
           />
         </View>
         <AppText style={styles.forgetPassword}>Forget Password?</AppText>
-        <Pressable style={styles.loginBtn}>
+        <Pressable
+          style={styles.loginBtn}
+          onPress={() => navigation.navigate('VerificationView')}>
           <AppText style={styles.loginText}>Login</AppText>
         </Pressable>
         <Pressable
